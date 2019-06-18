@@ -101,8 +101,8 @@ class _Event extends Component {
           <th>Event Name</th>
           <th>Company Name</th>
           <th>Vendor Name</th>
-          <th>Proposed Date</th>
-          <th>{this.state.status === "Approved" ? "Confirmed Date" : "Reason"}</th>
+          <th>Confirmed Date</th>
+          <th>Reason</th>
           <th>Status</th>
           <th>Date Created</th>
           <th>Location</th>
@@ -123,22 +123,16 @@ class _Event extends Component {
                 <td>{event.eventName}</td>
                 <td>{event.companyId.username}</td>
                 <td>{event.vendorId.username}</td>
-                <td>
-                {
-                  event.proposedDate.map((date, index)=> (
-                    <p key={index}>{new Date(date).toLocaleDateString()}</p>
-                  ))
-                }
-                </td>
-                <td>{event.status === "Approved" ? new Date(event.confirmedDate).toLocaleDateString() : event.reason}</td>
+                <td>{event.status === "Approved" ? new Date(event.confirmedDate).toLocaleDateString() : "-"}</td>
+                <td>{event.status === "Approved" ? "-" : event.reason}</td>
                 <td>{event.status ? event.status : "Pending"}</td>
                 <td>{new Date(event.created_at).toLocaleDateString()}</td>
                 <td>{event.proposedLocation}</td>
                 {
                   this.state.adminType == 2 ? (
                     <td>
-                      <Button id="PopView" color="success">View</Button>
-                      <UncontrolledPopover placement="bottom" target="PopView">
+                      <Button id={`PopView${index}`} color="success">View</Button>
+                      <UncontrolledPopover placement="bottom" target={`PopView${index}`}>
                       <PopoverHeader>Approval</PopoverHeader>
                         <PopoverBody>
                           <Input
