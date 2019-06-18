@@ -36,18 +36,14 @@ Frontend will running on localhost on port 3000
 ![alt text](https://github.com/makbarsyahwana/eventBook/blob/master/readme%20image/Screenshot%20from%202019-06-18%2008-25-08.png
 )
 
-5. login with vendor account
-![alt text](https://github.com/makbarsyahwana/eventBook/blob/master/readme%20image/Screenshot%20from%202019-06-18%2008-25-08.png
-)
-
-6. see event that just created
+5. see event that just created
 ![alt text](https://raw.githubusercontent.com/makbarsyahwana/eventBook/master/readme%20image/Screenshot%20from%202019-06-18%2008-25-20.png
 )
 
-7. login with vendor account
+6. login with vendor account
 ![alt text](https://raw.githubusercontent.com/makbarsyahwana/eventBook/master/readme%20image/Screenshot%20from%202019-06-18%2008-25-39.png
 )
 
-8. jump to event list that proposed to vendor
+7. jump to event list that proposed to vendor
 ![alt text](https://raw.githubusercontent.com/makbarsyahwana/eventBook/master/readme%20image/Screenshot%20from%202019-06-18%2008-47-56.png
 )
