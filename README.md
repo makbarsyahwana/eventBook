@@ -1,5 +1,4 @@
 # eventBook
-# birthdaybotbot
 ## Here the code for event booking
 
 ### Follow this step to running the app in local server
